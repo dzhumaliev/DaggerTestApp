@@ -23,4 +23,5 @@ open class App : Application() {
             .build()
         appComponent.inject(this)
     }
+
 }

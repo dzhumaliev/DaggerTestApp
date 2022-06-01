@@ -1,13 +1,14 @@
-package com.io.daggertestapp
+package com.io.daggertestapp.di
 
 import android.app.Application
-import android.util.Log
-import com.io.daggertestapp.app.App
+import com.io.daggertestapp.SimpleTest
+import com.io.daggertestapp.app.TestApp
 import com.io.daggertestapp.app.di.AppComponent
 import com.io.daggertestapp.app.di.FakeGetSerialNumberModule
 import com.io.daggertestapp.app.view.MainActivity
 import dagger.BindsInstance
 import dagger.Component
+import dagger.android.AndroidInjectionModule
 import javax.inject.Singleton
 
 @Singleton
@@ -16,7 +17,7 @@ import javax.inject.Singleton
         FakeGetSerialNumberModule::class
     ]
 )
-interface TestAppComponent : AppComponent {
+interface TestAppComponent {
 
     @Component.Builder
     interface Builder {
@@ -32,6 +33,6 @@ interface TestAppComponent : AppComponent {
 
     fun inject(simpleTest: SimpleTest)
 
-    override fun inject(main: MainActivity)
+    fun inject(main: MainActivity)
 
 }

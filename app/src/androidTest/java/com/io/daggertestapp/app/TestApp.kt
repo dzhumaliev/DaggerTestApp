@@ -1,4 +1,8 @@
-package com.io.daggertestapp
+package com.io.daggertestapp.app
+
+import com.io.daggertestapp.DebugApp
+import com.io.daggertestapp.di.DaggerTestAppComponent
+import com.io.daggertestapp.di.TestAppComponent
 
 
 class TestApp : DebugApp() {

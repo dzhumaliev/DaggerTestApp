@@ -14,7 +14,7 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "com.io.daggertestapp.CustomTestRunner"
+        testInstrumentationRunner "com.io.daggertestapp.runner.CustomTestRunner"
     }
 
     buildTypes {

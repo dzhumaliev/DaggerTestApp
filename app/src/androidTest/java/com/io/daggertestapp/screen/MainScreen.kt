@@ -1,5 +1,6 @@
-package com.io.daggertestapp
+package com.io.daggertestapp.screen
 
+import com.io.daggertestapp.R
 import com.io.daggertestapp.app.view.MainActivity
 import com.kaspersky.kaspresso.screens.KScreen
 import io.github.kakaocup.kakao.text.KTextView

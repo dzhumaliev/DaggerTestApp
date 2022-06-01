@@ -5,6 +5,7 @@ import com.io.daggertestapp.app.App
 import com.io.daggertestapp.app.view.MainActivity
 import dagger.BindsInstance
 import dagger.Component
+import dagger.android.AndroidInjectionModule
 import javax.inject.Singleton
 
 @Singleton
@@ -26,7 +27,6 @@ interface AppComponent {
     }
 
     fun inject(app: App)
-
 
     fun inject(main: MainActivity)
 
