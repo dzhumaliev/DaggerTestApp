@@ -1,9 +1,7 @@
 package com.io.daggertestapp
 
-import com.io.daggertestapp.app.App
 
-
-class TestApp : App() {
+class TestApp : DebugApp() {
 
     lateinit var fakeAppComponent: TestAppComponent
 
