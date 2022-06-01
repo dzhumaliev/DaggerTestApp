@@ -1,8 +1,11 @@
 package com.io.daggertestapp
 
 import android.app.Application
+import android.util.Log
+import com.io.daggertestapp.app.App
 import com.io.daggertestapp.app.di.AppComponent
 import com.io.daggertestapp.app.di.FakeGetSerialNumberModule
+import com.io.daggertestapp.app.view.MainActivity
 import dagger.BindsInstance
 import dagger.Component
 import javax.inject.Singleton
@@ -28,5 +31,7 @@ interface TestAppComponent : AppComponent {
     fun inject(app: TestApp)
 
     fun inject(simpleTest: SimpleTest)
+
+    override fun inject(main: MainActivity)
 
 }
