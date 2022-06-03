@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.io.daggertestapp.DebugApp
 import com.io.daggertestapp.R
 import com.io.daggertestapp.app.App
 import com.io.daggertestapp.domain.interactor.serial_number.GetSerialNumberUseCase
